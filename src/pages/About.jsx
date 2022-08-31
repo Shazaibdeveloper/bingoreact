@@ -3,7 +3,16 @@
 import React from 'react'
 import Footer from '../Components/Footer'
 import Navbar from '../Components/Navbar'
- 
+import company from "../images/company/company-image.jpg" 
+import company2 from '../images/company/company-image-2.jpg'
+import company3 from '../images/company/company-image-3.jpg'
+import gallery1 from '../images/company/gallery-1.jpg'
+import gallery2 from '../images/company/gallery-2.jpg'
+import gallery3 from '../images/company/gallery-3.jpg'
+import gallery4 from '../images/company/gallery-4.jpg'
+import gallery5 from '../images/company/gallery-5.jpg'
+import Teamcomp from '../Components/Teamcomp'
+
 
 const About = () => {
   return (
@@ -39,7 +48,7 @@ const About = () => {
 				</p>
 			</div>
 			<div className="col-lg-6 mt-4 mt-lg-0">
-				<img loading="lazy" className="img-fluid" src="images/company/company-image.jpg" alt="" />
+				<img loading="lazy" className="img-fluid" src={company} alt="" />
 			</div>
 		</div>
 	</div>
@@ -55,7 +64,7 @@ const About = () => {
 					assumenda vel, quia earum voluptatem blanditiis vero accusantium saepe aliquid nulla nemo accusamus, culpa
 					inventore! Culpa nemo aspernatur tenetur, at quam aliquid reprehenderit obcaecati dicta illum mollitia,
 					perferendis hic, beatae voluptates? Ex labore, obcaecati harum nam.</p>
-				<img loading="lazy" src="images/company/company-image-2.jpg" alt="" className="img-fluid mt-30" />
+				<img loading="lazy" src={company2} alt="" className="img-fluid mt-30" />
 			</div>
 			<div className="col-md-6 mt-5 mt-md-0">
 				<h3>Our Vision</h3>
@@ -63,28 +72,14 @@ const About = () => {
 					assumenda vel, quia earum voluptatem blanditiis vero accusantium saepe aliquid nulla nemo accusamus, culpa
 					inventore! Culpa nemo aspernatur tenetur, at quam aliquid reprehenderit obcaecati dicta illum mollitia,
 					perferendis hic, beatae voluptates? Ex labore, obcaecati harum nam.</p>
-				<img loading="lazy" src="images/company/company-image-3.jpg" alt="" className="img-fluid mt-30" />
+				<img loading="lazy" src={company3} alt="" className="img-fluid mt-30" />
 			</div>
 		</div>
 	</div>
 </section>
 
 
-<section className="promo-video section-sm">
-	<div className="container">
-		<div className="row justify-content-center">
- 			<div className="col-xl-6 col-lg-8">
-				<div className="title text-center">
-					<h2>Our Promo Video</h2>
-					<p>Vestibulum nisl tortor, consectetur quis imperdiet bibendum, laoreet sed arcu.Sed condimentum iaculis ex,
-						in faucibus lorem accumsan non. Donec mattis tincidunt metus. Morbi sed tortor a risus luctus dignissim.</p>
-					<div className="border"></div>
-				</div>
-			</div>
-		</div>
-		 
-	</div>
-</section>
+ <Teamcomp />
 
  <section className="call-to-action-2 section">
 	<div className="container">
@@ -112,110 +107,25 @@ const About = () => {
 		<div className="row">
 			<div className="col-md-12">
 				<div className="company-gallery">
-					<img loading="lazy" src="images/company/gallery-1.jpg" alt="" />
-					<img loading="lazy" src="images/company/gallery-2.jpg" alt="" />
-					<img loading="lazy" src="images/company/gallery-3.jpg" alt="" />
-					<img loading="lazy" src="images/company/gallery-4.jpg" alt="" />
-					<img loading="lazy" src="images/company/gallery-5.jpg" alt="" />
-					<img loading="lazy" src="images/company/gallery-5.jpg" alt="" />
-					<img loading="lazy" src="images/company/gallery-1.jpg" alt="" />
-					<img loading="lazy" src="images/company/gallery-2.jpg" alt="" />
-					<img loading="lazy" src="images/company/gallery-3.jpg" alt="" />
-					<img loading="lazy" src="images/company/gallery-4.jpg" alt="" />
-					<img loading="lazy" src="images/company/gallery-5.jpg" alt="" />
-					<img loading="lazy" src="images/company/gallery-5.jpg" alt="" />
+					<img loading="lazy" src={gallery1} alt="" />
+					<img loading="lazy" src={gallery2} alt="" />
+					<img loading="lazy" src={gallery3} alt="" />
+					<img loading="lazy" src={gallery4} alt="" />
+					<img loading="lazy" src={gallery5} alt="" />
+					<img loading="lazy" src={gallery5} alt="" />
+					<img loading="lazy" src={gallery1} alt="" />
+					<img loading="lazy" src={gallery2} alt="" />
+					<img loading="lazy" src={gallery4} alt="" />
+					<img loading="lazy" src={gallery4} alt="" />
+					<img loading="lazy" src={gallery5} alt="" />
+					<img loading="lazy" src={gallery5} alt="" />
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
 
- <section className="team" id="team">
-	<div className="container">
-		<div className="row justify-content-center">
- 			<div className="col-xl-6 col-lg-8">
-				<div className="title text-center ">
-					<h2>Our Team</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque quasi tempora obcaecati, quis
-						similique quos.</p>
-					<div className="border"></div>
-				</div>
-			</div>
- 		</div>
-		<div className="row">
- 			<div className="col-lg-4 col-md-6">
-				<div className="team-member text-center">
-					<div className="member-photo">
- 						<img loading="lazy" className="img-fluid" src="images/team/member-1.jpg" alt="Meghna" />
- 
- 						<div className="mask">
-							<ul className="clearfix">
-								<li><a href="https://themefisher.com/"><i className="tf-ion-social-facebook"></i></a></li>
-								<li><a href="https://themefisher.com/"><i className="tf-ion-social-twitter"></i></a></li>
-								<li><a href="https://themefisher.com/"><i className="tf-ion-social-google-outline"></i></a></li>
-								<li><a href="https://themefisher.com/"><i className="tf-ion-social-dribbble"></i></a></li>
-							</ul>
-						</div>
- 					</div>
 
- 					<div className="member-content">
-						<h3>Michael Jonson</h3>
-						<span>Head Of Marketing</span>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, culpa odio.</p>
-					</div>
- 
-				</div>
-			</div>
- 
- 			<div className="col-lg-4 col-md-6">
-				<div className="team-member text-center">
-					<div className="member-photo">
- 						<img loading="lazy" className="img-fluid" src="images/team/member-2.jpg" alt="Meghna" />
- 
- 						<div className="mask">
-							<ul className="clearfix">
-								<li><a href="https://themefisher.com/"><i className="tf-ion-social-facebook"></i></a></li>
-								<li><a href="https://themefisher.com/"><i className="tf-ion-social-twitter"></i></a></li>
-								<li><a href="https://themefisher.com/"><i className="tf-ion-social-google-outline"></i></a></li>
-								<li><a href="https://themefisher.com/"><i className="tf-ion-social-dribbble"></i></a></li>
-							</ul>
-						</div>
- 					</div>
-
- 					<div className="member-content">
-						<h3>Carrick Mollenkamp</h3>
-						<span>Web Developer</span>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, culpa odio.</p>
-					</div>
- 				</div>
-			</div>
- 
- 			<div className="col-lg-4 col-md-6">
-				<div className="team-member text-center">
-					<div className="member-photo">
- 						<img loading="lazy" className="img-fluid" src="images/team/member-3.jpg" alt="Meghna" />
- 
- 						<div className="mask">
-							<ul className="clearfix">
-								<li><a href="https://themefisher.com/"><i className="tf-ion-social-facebook"></i></a></li>
-								<li><a href="https://themefisher.com/"><i className="tf-ion-social-twitter"></i></a></li>
-								<li><a href="https://themefisher.com/"><i className="tf-ion-social-google-outline"></i></a></li>
-								<li><a href="https://themefisher.com/"><i className="tf-ion-social-dribbble"></i></a></li>
-							</ul>
-						</div>
- 					</div>
-
- 					<div className="member-content">
-						<h3>David Gauthier</h3>
-						<span>Head Of Management</span>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, culpa odio.</p>
-					</div>
- 
-				</div>
-			</div>
- 		</div>  
-	</div>  
-</section> 
 
  <section className="counter-wrapper section-sm">
 	<div className="container">
