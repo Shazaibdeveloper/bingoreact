@@ -15,6 +15,7 @@ import { TiInputChecked } from 'react-icons/ti';
 import { GiCoffeeCup } from 'react-icons/gi';
 import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer';
+import Counter from '../Components/Counter';
 
 
 
@@ -219,40 +220,8 @@ const Home = () => {
 	</div> 
 </section>  
  
-<section className="counter-wrapper section-sm">
-	<div className="container">
-		<div className="row justify-content-center">
-			<div className="col-xl-6 col-lg-8 text-center">
-				<div className="title">
-					<h2>Award-Winning Agency</h2>
-					<p>Vestibulum nisl tortor, consectetur quis imperdiet bibendum, laoreet sed arcu. Sed condimentum iaculis ex, in faucibus lorem accumsan non. Donec mattis tincidunt metus. Morbi sed tortor a risus luctus dignissim.</p>
-				</div>
-			</div>
-		</div>
-		<div className="row">
-			 
-       {award.map((prop) =>{
-         const {icon,head,para} = prop
-        return(
-          <>
-          	<div className="col-md-3 col-sm-6 col-xs-6 text-center ">
-				<div className="counters-item">
-					<i className="tf-ion-ios-alarm-outline">{icon}</i>
-					<div>
-						<span className="counter" data-count="150">{head}</span>
-					</div>
-					<h3>{para}</h3>
-				</div>
-			</div> 
-          </>
-        )
-       })}
-		
-  
-			 
-		</div> 
-	</div> 
-</section> 
+<Counter />
+
  
 		
  <div id="carouselExampleControls" className="carousel slide text-center carousel-dark" data-mdb-ride="carousel">

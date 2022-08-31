@@ -61,8 +61,6 @@ const Team = () => {
 </section>  
 
 <Teamcomp />
- 
-
 <Footer />
 
  
